@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academia Romano — Força, Disciplina e Resultados. Musculação, Zumba, Lutas e Funcional em Aparecida de Goiânia." />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" type="imagex/png" href="img/Logo.jpeg">
+  <title>Academia Romano — Força, Disciplina, Resultados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--  NAV  -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Menu principal">
+    <a href="#home" class="nav__logo" aria-label="Academia Romano - início"><img class="nav__logo-img" src="img/Romano.png" alt="Academia Romano"></a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav__menu" id="navMenu" role="list">
+      <li><a href="#home" class="nav__link">Home</a></li>
+      <li><a href="#modalidades" class="nav__link">Modalidades</a></li>
+      <li><a href="#grade" class="nav__link">Grade</a></li>
+      <li><a href="#sobre" class="nav__link">Sobre</a></li>
+      <li><a href="#planos" class="nav__link">Planos</a></li>
+      <li><a href="#contato" class="nav__link">Contato</a></li>
+    </ul>
+
+    <a href="#planos" class="btn btn--primary nav__cta">Matricule-se</a>
+  </nav>
+
+  <!--  HERO  -->
+  <section class="hero" id="home" aria-label="Apresentação">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__noise"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="hero__content">
+      <span class="hero__tag" aria-hidden="true">Academia Romano</span>
+      <h1 class="hero__title">
+        <span class="hero__line">Força.</span>
+        <span class="hero__line">Disciplina.</span>
+        <span class="hero__line hero__line--accent">Resultados.</span>
+      </h1>
+      <p class="hero__sub">Transforme seu corpo e sua mente.<br/>Treinamento de elite para quem quer mais.</p>
+      <div class="hero__actions">
+        <a href="#planos" class="btn btn--primary btn--lg">Começar Agora</a>
+        <a href="#modalidades" class="btn btn--ghost btn--lg">Ver Modalidades</a></div></div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Role para baixo</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!--  MODALIDADES  -->
+  <section class="section modalidades" id="modalidades" aria-labelledby="modalidades-title">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__tag">O que oferecemos</span>
+        <h2 class="section__title" id="modalidades-title">Modalidades</h2>
+        <p class="section__desc">Escolha sua batalha. Cada modalidade é ministrada por profissionais certificados.</p>
+      </header>
+
+      <div class="modalidades__grid" id="modalidadesGrid" role="list" aria-label="Modalidades da academia">
+        <!-- Preenchido via JS / API -->
+        <div class="card card--loading" aria-hidden="true"></div>
+        <div class="card card--loading" aria-hidden="true"></div>
+        <div class="card card--loading" aria-hidden="true"></div>
+        <div class="card card--loading" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--  GRADE COLETIVA  -->
+  <section class="section grade" id="grade" aria-labelledby="grade-title">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__tag">Modalidades Romano</span>
+        <h2 class="section__title" id="grade-title">Grade Coletiva</h2>
+        <p class="section__desc">Confira os horários e professores de cada aula. Grade atualizada semanalmente.</p>
+      </header>
+
+      <div class="grade__wrap">
+        <div class="grade__table-scroll" role="region" aria-label="Grade de aulas coletivas" tabindex="0">
+          <table class="grade__table" id="gradeTable">
+            <thead>
+              <tr id="gradeHead">
+                <th scope="col" class="grade__th grade__th--hora">Horário</th>
+                <!-- dias preenchidos via JS -->
+              </tr>
+            </thead>
+            <tbody id="gradeBody">
+              <!-- linhas preenchidas via JS -->
+              <tr><td colspan="7" class="grade__loading" aria-busy="true">Carregando grade…</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="grade__hint" aria-hidden="true">← deslize para ver todos os dias →</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section sobre" id="sobre" aria-labelledby="sobre-title">
+    <div class="container sobre__inner">
+      <div class="sobre__visual" aria-hidden="true">
+        <div class="sobre__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80"
+            alt="Interior da Academia Romano com equipamentos modernos"
+            loading="lazy"
+            width="700" height="500"
+          />
+          <div class="sobre__badge">
+            <span class="sobre__badge-num">1</span>
+            <span class="sobre__badge-txt">Ano de<br/>Excelência</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre__text">
+        <span class="section__tag">Nossa história</span>
+        <h2 class="section__title" id="sobre-title">Sobre Nós</h2>
+        <p>A Academia Romano nasceu da paixão pela disciplina e pela superação. Inspirada na força da Roma Antiga, acreditamos que cada aluno carrega o potencial de um gladiador.</p>
+        <p>Com equipamentos de última geração, instrutores certificados e um ambiente que respira determinação, transformamos rotinas em resultados reais.</p>
+
+        <ul class="sobre__features" role="list">
+          <li class="sobre__feature">
+            <span class="sobre__feature-icon" aria-hidden="true">🏛️</span>
+            <div>
+              <strong>Estrutura Completa</strong>
+              <span>+2.000 m² de área de treino</span>
+            </div>
+          </li>
+          <li class="sobre__feature">
+            <span class="sobre__feature-icon" aria-hidden="true">🎯</span>
+            <div>
+              <strong>Metodologia Exclusiva</strong>
+              <span>Treinos personalizados por especialistas</span>
+            </div>
+          </li>
+          <li class="sobre__feature">
+            <span class="sobre__feature-icon" aria-hidden="true">🔥</span>
+            <div>
+              <strong>Comunidade Forte</strong>
+              <span>Ambiente motivador de verdade</span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#planos" class="btn btn--primary">Fazer Parte da Família Romano</a>
+      </div>
+    </div>
+  </section>
+
+  <!--  PLANOS  -->
+  <section class="section planos" id="planos" aria-labelledby="planos-title">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__tag">Invista em você</span>
+        <h2 class="section__title" id="planos-title">Escolha seu Plano</h2>
+        <p class="section__desc">Sem taxas escondidas. Cancele quando quiser.</p>
+      </header>
+
+      <div class="planos__grid" id="planosGrid" role="list" aria-label="Planos disponíveis">
+        <!-- Preenchido via JS-->
+        <div class="card card--loading" aria-hidden="true"></div>
+        <div class="card card--loading" aria-hidden="true"></div>
+        <div class="card card--loading" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATRICULA -->
+  <div class="modal" id="matriculaModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Fechar modal">✕</button>
+      <div class="modal__header">
+        <h3 class="modal__title" id="modalTitle">Pré-matrícula</h3>
+        <p class="modal__sub" id="modalSub">Plano selecionado</p>
+      </div>
+      <form class="form" id="matriculaForm" novalidate aria-label="Formulário de matrícula">
+        <input type="hidden" id="planoId" name="plano" />
+        <div class="form__group">
+          <label class="form__label" for="mat-nome">Nome completo *</label>
+          <input class="form__input" type="text" id="mat-nome" name="nome" autocomplete="name" required minlength="2" maxlength="100" />
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="mat-email">E-mail *</label>
+          <input class="form__input" type="email" id="mat-email" name="email" autocomplete="email" required />
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="mat-tel">Telefone *</label>
+          <input class="form__input" type="tel" id="mat-tel" name="telefone" autocomplete="tel" required placeholder="(62) 99999-9999" />
+          <span class="form__error" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="matriculaSubmit">
+          <span class="btn__text">Confirmar Pré-matrícula</span>
+          <span class="btn__loader" aria-hidden="true"></span>
+        </button>
+      </form>
+      
+      <div class="modal__success" id="modalSuccess" hidden role="status" aria-live="polite">
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h4>Pré-matrícula realizada!</h4>
+        <p id="successMessage"></p>
+        <small id="successProtocolo"></small>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>(function(){emailjs.init("19fSAZVU6XT1LP-B1");})();</script>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato" aria-labelledby="contato-title">
+    <div class="container contato__inner">
+      <div class="contato__info">
+        <span class="section__tag">Fale conosco</span>
+        <h2 class="section__title" id="contato-title">Contato</h2>
+        <p>Tire suas dúvidas ou venha nos visitar. Nossa equipe está pronta para te receber.</p>
+
+        <ul class="contato__list" role="list">
+          <li>
+            <span aria-hidden="true">📍</span>
+            <a id="local" href="#">Av. zoroastro Artiaga,R.L-12, QD-03 — Aparecida de Goiânia, GO</a>
+          </li>
+          <li>
+            <span aria-hidden="true">✉️</span>
+            <a href="mailto:contato@academiaromano.com.br">contato@academiaromano.com.br</a>
+          </li>
+          <li>
+            <span aria-hidden="true">🕐</span>
+            <span>Seg–Sex: 5h–22h | Sáb: 7h–13h | Dom: 8h–12h</span>
+          </li>
+        </ul>
+
+        <div class="contato__social" role="list" aria-label="Redes sociais">
+          <a id="botaogram" class="social-btn" aria-label="Instagram" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a id="botaoWhatsapp" class="social-btn" aria-label="WhatsApp" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a id="botaothreads" class="social-btn" aria-label="Threads" role="listitem">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"><path d="M427.5 299.7C429.7 300.6 431.7 301.6 433.8 302.5C463 316.6 484.4 337.7 495.6 363.9C511.3 400.4 512.8 459.7 465.3 507.1C429.1 543.3 385 559.6 322.7 560.1L322.4 560.1C252.2 559.6 198.3 536 162 489.9C129.7 448.9 113.1 391.8 112.5 320.3L112.5 319.8C113 248.3 129.6 191.2 161.9 150.2C198.2 104.1 252.2 80.5 322.4 80L322.7 80C393 80.5 447.6 104 485 149.9C503.4 172.6 517 199.9 525.6 231.6L485.2 242.4C478.1 216.6 467.4 194.6 453 177C423.8 141.2 380 122.8 322.5 122.4C265.5 122.9 222.4 141.2 194.3 176.8C168.1 210.1 154.5 258.3 154 320C154.5 381.7 168.1 429.9 194.3 463.3C222.3 498.9 265.5 517.2 322.5 517.7C373.9 517.3 407.9 505.1 436.2 476.8C468.5 444.6 467.9 405 457.6 380.9C451.5 366.7 440.5 354.9 425.7 346C422 372.9 413.9 394.3 401 410.8C383.9 432.6 359.6 444.4 328.3 446.1C304.7 447.4 282 441.7 264.4 430.1C243.6 416.3 231.4 395.3 230.1 370.8C227.6 322.5 265.8 287.8 325.3 284.4C346.4 283.2 366.2 284.1 384.5 287.2C382.1 272.4 377.2 260.6 369.9 252C359.9 240.3 344.3 234.3 323.7 234.2L323 234.2C306.4 234.2 284 238.8 269.7 260.5L235.3 236.9C254.5 207.8 285.6 191.8 323.1 191.8L323.9 191.8C386.5 192.2 423.8 231.3 427.6 299.5L427.4 299.7L427.5 299.7zM271.5 368.5C272.8 393.6 299.9 405.3 326.1 403.8C351.7 402.4 380.7 392.4 385.6 330.6C372.4 327.7 357.8 326.2 342.2 326.2C337.4 326.2 332.6 326.3 327.8 326.6C284.9 329 270.6 349.8 271.6 368.4L271.5 368.5z"/></svg></a>
+        </div>
+      </div>
+
+      <form class="form contato__form" id="contatoForm" novalidate aria-label="Formulário de contato">
+        <div class="form__group">
+          <label class="form__label" for="ct-nome">Nome *</label>
+          <input class="form__input" type="text" id="ct-nome" name="nome" autocomplete="name" required minlength="2" maxlength="100" />
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label" for="ct-email">E-mail *</label>
+            <input class="form__input" type="email" id="ct-email" name="email" autocomplete="email" required />
+            <span class="form__error" role="alert"></span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="ct-tel">Telefone *</label>
+            <input class="form__input" type="tel" id="ct-tel" name="telefone" autocomplete="tel" required placeholder="(62) 99999-9999" />
+            <span class="form__error" role="alert"></span>
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="ct-msg">Mensagem *</label>
+          <textarea class="form__input form__textarea" id="ct-msg" name="mensagem" required minlength="10" maxlength="1000" rows="4" placeholder="Como podemos ajudar?"></textarea>
+          <span class="form__error" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="contatoSubmit">
+          <span class="btn__text">Enviar Mensagem</span>
+          <span class="btn__loader" aria-hidden="true"></span>
+        </button>
+        <div class="form__feedback" id="contatoFeedback" role="status" aria-live="polite" hidden></div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>(function(){emailjs.init("19fSAZVU6XT1LP-B1");})();</script>
+      </form>
+    </div>
+  </section>
+
+  <!--  FOOTER-->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="#home" class="footer__logo" aria-label="Academia Romano"><img class="footer__logo-img" src="img/Romano.png" alt="logo da academia"></a>
+      <p class="footer__copy">© 2026 Academia Romano — Todos os direitos reservados.</p>
+      <p class="footer__dev">Desenvolvido com excelência</p>
+    </div>
+  </footer>
+
+  <script src="server.js"></script>
+  <script src="api.js"></script>
+</body>
+</html>
