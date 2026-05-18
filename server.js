@@ -1,9 +1,9 @@
 const MODALIDADES = [
   {
     nome: 'Musculação',
-    descricao: 'Equipamentos de qualidade para hipertrofia e força',
+    descricao: 'Equipamentos de qualidade para hipertrofia e ergometria — treine com segurança e resultados',
     icone: '🏋️',
-    horarios: 'Seg-Sex: 5h-22h | Sáb: 7h-13h | Dom: 8h-12h'
+    horarios: 'Seg-Sex: 5h-22h | Sáb: 7h-13h | Dom: 8h-12h | Feriados: 7h-13h'
   },
   {
     nome: 'Dança',
@@ -23,7 +23,7 @@ const PLANOS = [
   {
     id: 1,
     nome: 'Básico',
-    preco: 89.90,
+    preco: 100.00,
     periodo: 'mês',
     descricao: 'Ideal para quem está começando',
     destaque: false,
@@ -35,8 +35,22 @@ const PLANOS = [
   },
   {
     id: 2,
+    nome: 'basico trismestral',
+    preco: 270.00,
+    periodo: 'trimestral',
+    descricao: 'Acesso completo à academia',
+    destaque: false,
+    recursos: [
+      'Acesso completo à academia',
+      'Avaliação física inicial',
+      'App de treinos exclusivo',
+      '3 vezes sem juros no cartão'
+    ]
+  },
+  {
+    id: 3,
     nome: 'Romano',
-    preco: 139.90,
+    preco: 120.00,
     periodo: 'mês',
     descricao: 'Acesso completo à academia',
     destaque: true,
@@ -44,7 +58,38 @@ const PLANOS = [
       'Acesso completo à academia',
       'Todas as modalidades',
       'Avaliação física inicial',
+      'App de treinos exclusivo'
+    ]
+  },
+  {
+    id: 4,
+    nome: 'Romano trimestral',
+    preco: 330.00,
+    periodo: 'trimestral',
+    descricao: 'Acesso completo à academia',
+    destaque: false,
+    recursos: [
+      'Acesso completo à academia',
+      'Todas as modalidades',
+      'Avaliação física inicial',
       'App de treinos exclusivo',
+      '3 vezes sem juros no cartão'
+    ]
+  },
+  {
+    id: 5,
+    nome: 'Anual',
+    preco: 960.00,
+    periodo: 'anual',
+    descricao: 'Acesso completo à academia por um ano',
+    destaque: false,
+    recursos: [
+      'Acesso completo à academia',
+      'Todas as modalidades',
+      'Avaliação física inicial',
+      'App de treinos exclusivo',
+      'Divididos em 6 vezes',
+      'À vista R$950,00'
     ]
   }
 ];
@@ -112,10 +157,6 @@ const GRADE = [
     ]
   }
 ];
-
-/* ══════════════════════════════════════════════════════════
-   RENDER — monta o HTML a partir dos dados acima
-   ══════════════════════════════════════════════════════════ */
 
 function renderModalidades() {
   const grid = document.getElementById('modalidadesGrid');
