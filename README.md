@@ -2,7 +2,7 @@
 
 ## 📌 Sobre o projeto
 
-Este repositório contém o site oficial da Academia Romano, desenvolvido para apresentar planos, permitir pré‑matrícula online e oferecer um formulário de contato integrado.
+Este repositório contém um site de uma Academia chamada Romano, desenvolvido para apresentar planos, permitir pré‑matrícula online e oferecer um formulário de contato integrado.
 
 - 🎨 Design inspirado nas cores vermelho e preto, transmitindo força e disciplina.
 
@@ -39,5 +39,3 @@ Este repositório contém o site oficial da Academia Romano, desenvolvido para a
 - Projeto desenvolvido por Arthur.
 
 - Apoio de Inteligência Artificial (IA) para geração de código e ideias.
-
-- Identidade visual e conceito criados exclusivamente para a Academia Romano.
