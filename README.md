@@ -1,4 +1,4 @@
-# Academia Romano — Site Oficial
+# Academia Romano — Site criado para aprendizado
 
 ## 📌 Sobre o projeto
 
